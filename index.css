@@ -1,0 +1,119 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel {
+  min-width: 343px;
+  margin: auto;
+  font-size: var(--fs-l);
+  color: var(--color-white);
+  font-family: var(--font-sans-pro);
+  display: flex;
+  flex-direction: column;
+}
+
+.panel__top {
+  display: flex;
+  border-radius: var(--br-xs) var(--br-xs) 0 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #4c2f48;
+  flex-direction: column;
+  padding: var(--padding-l);
+  gap: 15px;
+}
+
+.panel__cart {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-s);
+}
+
+.panel__cart-items {
+  flex: 1;
+  font-size: var(--fs-l);
+  font-weight: 400;
+}
+
+.panel__cart-amount {
+  height: 28px;
+  font-size: 20px;
+  display: flex;
+  text-align: right;
+  align-items: center;
+}
+
+.panel__delivery {
+  align-self: stretch;
+  align-items: center;
+  font-size: var(--fs-s);
+  display: flex;
+}
+
+.panel__delivery-title {
+  flex: 1;
+  white-space: pre-wrap;
+  display: inline-block;
+  min-width: 61px;
+}
+
+.panel__delivery-days {
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.12);
+  padding: var(--padding-xxs) 7px var(--padding-xxs) 10px;
+  display: flex;
+}
+
+.panel__actions-btn {
+  cursor: pointer;
+  color: var(--color-white);
+  border: 0;
+  background-color: var(--color-landmark-orange);
+  height: var(--button-height);
+  width: 138px;
+  border-radius: var(--button-input-radius);
+}
+
+.panel__actions-btn-text {
+  font-size: var(--fs-m);
+  font-weight: 600;
+  font-family: var(--font-sans-pro);
+  padding: 0 var(--button-padding-l-r);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel__bottom {
+  box-shadow: var(--standard-dropshadow);
+  border-radius: 0 0 var(--br-xs) var(--br-xs);
+  background-color: var(--color-white);
+  padding: var(--padding-m) 23px var(--padding-l);
+  font-size: var(--fs-s);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel__item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-s);
+}
+
+.panel__item-summary {
+  font-size: 11px;
+  color: rgba(51, 51, 51, 0.7);
+}
+
+@media only screen and (min-width: 448px) {
+  .panel {
+    width: calc(100% - 200px);
+    margin: auto;
+    min-width: 343px;
+  }
+}

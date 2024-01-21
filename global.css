@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+body {
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-sans-pro: "Source Sans Pro";
+  --font-font-awesome-6-pro: "Font Awesome 6 Pro";
+
+  /* font sizes */
+  --fs-s: 13px;
+  --fs-m: 16px;
+  --fs-l: 19px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-landmark-orange: #ff7800;
+
+  /* Spacing */
+  --button-between-buttons: 16px;
+  --button-padding-button-icon: 12px;
+  --button-padding-l-r: 20px;
+  --button-height: 52px;
+  --button-input-radius: 4px;
+  --button-minimum-width: 100px;
+
+  /* Gaps */
+  --gap-s: 5px;
+
+  /* Paddings */
+  --padding-m: 20px;
+  --padding-l: 30px;
+  --padding-xxs: 3px;
+
+  /* Border radiuses */
+  --br-xs: 5px;
+
+  /* Effects */
+  --standard-dropshadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
